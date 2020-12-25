@@ -45,8 +45,17 @@ def RecursivePower(n,p):
     else:
         return n * RecursivePower(n, p - 1)
     
+def RecursivePower_1(x, n):
+    
+    if(n == 0):
+        return 1
+    
+    xnm = RecursivePower_1(x, n-1)
+    xn = x * xnm
+    return xn
+
 print(RecursivePower(2, 4))
-print(RecursivePower(9, 9))
+print(RecursivePower_1(9, 9))
     
     
     
