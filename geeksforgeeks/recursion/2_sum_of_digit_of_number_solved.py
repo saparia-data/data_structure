@@ -38,7 +38,7 @@ def sumOfDigits(n):
     :param n: given number
     :return: sum of digits of n.
 
-'''
+
 
 def sumOfDigits(n):
     return 0 if n == 0 else int(n%10) + sumOfDigits(n/10)
@@ -53,7 +53,7 @@ def sumOfDigits(n):
     
 
 print(sumOfDigits(123))
-
+'''
 
 def SD(n):
     

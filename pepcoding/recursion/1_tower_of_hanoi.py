@@ -26,6 +26,8 @@ sample output:
 2[12 -> 11]
 1[10 -> 11]
 
+https://www.youtube.com/watch?v=QDBrZFROuA0&list=PL-Jc9J83PIiFxaBahjslhBD1LiJAV7nKs&index=12
+
 '''
 
 def toh(n, t1, t2, t3):

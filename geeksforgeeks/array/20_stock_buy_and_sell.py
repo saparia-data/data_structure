@@ -58,9 +58,9 @@ def stockBuySell(A,N):
         return
     
     i = 0
-    while(i < N-1):
+    while(i < N):
         
-        while((i < N-1) and A[i + 1] <= A[i]):
+        while((i < N) and A[i + 1] <= A[i]):
             i += 1
             
         if(i == (N - 1)):
@@ -69,7 +69,7 @@ def stockBuySell(A,N):
         buy = i
         i += 1
             
-        while((i < N-1) and A[i] >= A[i - 1]):
+        while((i < N) and A[i] >= A[i - 1]):
             i += 1
             
         sell = (i - 1)
@@ -80,7 +80,7 @@ def stockBuySell(A,N):
 
 
 
-A = [100,180,260,310,40,535,695]
+A = [23,13,25,29,33,19,34,45,65,67]
 N = len(A)
 
 stockBuySell(A, N)
