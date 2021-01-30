@@ -46,4 +46,16 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
     
+    
+def fibonacci2(n):
+    
+    if(n == 0 or n == 1):
+        return n
+    
+    fibonm1 = fibonacci2(n - 1)
+    fibonm2 = fibonacci2(n - 2)
+    fibon = fibonm1 + fibonm2
+    return fibon
+    
 print(fibonacci(20))
+print(fibonacci2(20))
